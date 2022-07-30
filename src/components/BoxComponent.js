@@ -8,6 +8,13 @@ export default function ChangeText(props) {
   return (
     <div className="color-box">
       <h1>Change text style here</h1>
+      <input
+        type="text"
+        id="text"
+        name="text"
+        value={text}
+        onChange={(event) => setText(event.target.value)}
+      />
       <div className="text-box">{text}</div>
       <button className="reverse-btn, black" onClick={reverseText}>
         Reverse
